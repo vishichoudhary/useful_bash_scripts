@@ -8,5 +8,5 @@ This repo contains some useful bash scripts which are making my day-to-day life 
                 this script will create a new file with already some content
                         example first.cpp
                 this will generate file like this
-![Alt text](/docs/vim.png?raw=true "Image to show cvim ")
+![Alt text](https://github.com/vishichoudhary/useful_bash_scripts/docs/vim.png?raw=true "Image to show cvim ")
 
