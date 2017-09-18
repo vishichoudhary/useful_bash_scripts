@@ -1,10 +1,10 @@
 This repo contains some useful bash scripts which are making my day-to-day life much easier :)
-# Files
-        -copy 
+# Scripts #
+## 1.copy 
                 this script help you to copy your file content to clipboard
                         example: copy file_name.ext
                 then simply ctrl+v
-        -cvim 
+## 2.cvim 
                 this script will create a new file with already some content
                         example first.cpp
                 this will generate file like this
