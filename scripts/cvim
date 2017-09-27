@@ -2,19 +2,28 @@
 cur_dir=`pwd`
 cur_time=`date $T`
 path=$cur_dir/$1
->$path
-echo -e "/*" >>$path
-echo -e "\t\t\t written by vishal choudhary">>$path
-echo -e "\t\t\t email id vishal130.vk@gmail.com" >>$path 
-echo -e "\t\t\t at $cur_time " >>$path 
-echo "*/">>$path
-echo "#include<bits/stdc++.h>" >>$path 
-echo "using namespace std;" >>$path 
-echo "#define mp make_pair" >>$path
-echo "#define loopf for(auto i=0;i<n;i++)" >>$path
-echo "#define loopb for(auto i=n;i>0;i--)" >>$path
-echo "int main(){">>$path
-echo -e "\treturn 0;">>$path
-echo "}">>$path
-cd $cur_dir
-vim $1
+if [ ! -f "$path" ]; then
+        >$path
+        echo -e "/*" >>$path
+        echo -e "\t\t\t written by vishal choudhary">>$path
+        echo -e "\t\t\t email id vishal130.vk@gmail.com" >>$path 
+        echo -e "\t\t\t at $cur_time " >>$path 
+        echo "*/">>$path
+        echo "#include<bits/stdc++.h>" >>$path 
+        echo "using namespace std;" >>$path 
+        echo "#define lli long long int">>$path
+        echo "#define ulli unsigned long long int">>$path
+        echo "#define ll long long ">>$path
+        echo "#define ull  unsigned long long">>$path
+        echo "#define mp make_pair" >>$path
+        echo "#define loopf for(int i=X;i<Y;i++)" >>$path
+        echo "#define loopb for(int i=X;i>Y;i--)" >>$path
+        echo "int main(){">>$path
+        echo -e "\t\treturn 0;">>$path
+        echo "}">>$path
+        cd $cur_dir
+        vim $1
+else
+        echo "file exist som im opening with vim"
+        vim $1
+fi
