@@ -11,4 +11,13 @@ This repo contains some useful bash scripts which are making my day-to-day life 
                         example first.cpp
                 this will generate file like this
 ![Alt text](https://github.com/vishichoudhary/useful_bash_scripts/blob/master/docs/cvim.png?raw=true "Image to show cvim ")
+## 3.search_me
+                This script will search the given string 
+                    1) If you didn't provide any path it will search in your current directory
+                        example: search_me "Done copying" 
+                    2) Else it will search in the given path
+                        example: search_me "Done copying" ~/Programs/useful_bash_scripts
+![Alt text](https://github.com/vishichoudhary/useful_bash_scripts/blob/master/docs/search_me_with_path.png?raw=true "Image to show search_me with path ")
+![Alt text](https://github.com/vishichoudhary/useful_bash_scripts/blob/master/docs/search_me_without_path.png?raw=true "Image to search_me without path cvim ")
+
 
