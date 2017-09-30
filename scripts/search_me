@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ ! "$2" ]
+then 
+    grep -i -nr "$1" .
+else 
+    grep -i -nr "$1" $2 
+fi
