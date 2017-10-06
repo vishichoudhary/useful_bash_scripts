@@ -16,8 +16,8 @@ if [ ! -f "$path" ]; then
         echo "#define ll long long ">>$path
         echo "#define ull  unsigned long long">>$path
         echo "#define mp make_pair" >>$path
-        echo "#define loopf for(int i=X;i<Y;i++)" >>$path
-        echo "#define loopb for(int i=X;i>Y;i--)" >>$path
+        echo "#define loopf(X,Y) for(int i=X;i<Y;i++)" >>$path
+        echo "#define loopb(X,Y) for(int i=X;i>Y;i--)" >>$path
         echo "int main(){">>$path
         echo -e "\t\treturn 0;">>$path
         echo "}">>$path
