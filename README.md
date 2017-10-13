@@ -20,4 +20,6 @@ This repo contains some useful bash scripts which are making my day-to-day life 
 ![Alt text](https://github.com/vishichoudhary/useful_bash_scripts/blob/master/docs/search_me_with_path.png?raw=true "Image to show search_me with path ")
 ![Alt text](https://github.com/vishichoudhary/useful_bash_scripts/blob/master/docs/search_me_without_path.png?raw=true "Image to search_me without path cvim ")
 
-
+## 3.wan_ip
+                This script will return your WAN ip 
+                    example: sh wan_ip
