@@ -11,10 +11,10 @@ function fping_check() {
 FPING=`whereis fping | awk -F":" '{ print $2 }' | awk -F" " '{ print $1 }'`
 
 if [ -z $FPING ]; then
-   echo -e '''Fping não encontrado
-              instale utilizando:
+   echo -e '''Not found Fping 
+              Please install using:
               sudo apt-get install fping
-              ou
+              or
               sudo yum install fping
            '''
    exit 1
@@ -24,8 +24,8 @@ fi
 
 fping_check
 echo -e '''
-        Informe a rede que deseja pingar:
-        ex: 192.168.0.1
+        Tell me you network:
+        eg: 192.168.0.1
         '''
     read NETWORK
 
