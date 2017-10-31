@@ -29,3 +29,18 @@ This repo contains some useful bash scripts which are making my day-to-day life 
 		usage example: bash ping_network.sh
 		after execute the script pass you network
 		eg: 192.168.0.1
+## 6. Pull all git repos inside a directory
+This script will `cd` install all child directories and `git pull` them.
+Best added to your **~/.bash_profile**
+```bash
+function pullall {
+	for d in *; do
+	echo $'\n'
+	echo $d
+	cd $d
+	git checkout master
+	git pull
+	cd ..
+	done
+}
+```
