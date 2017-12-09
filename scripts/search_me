@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ ! "$2" ]
 then 
-    grep -i -nr "$1" .
+    grep -i -nr "$1" . "--exclude-dir=$3"
 else 
-    grep -i -nr "$1" $2 
+    grep -i -nr "$1" $2 "--exclude-dir=$3"
 fi
