@@ -29,3 +29,14 @@ This repo contains some useful bash scripts which are making my day-to-day life 
 		usage example: bash ping_network.sh
 		after execute the script pass you network
 		eg: 192.168.0.1
+
+## 6.udit
+        A simple script that takes contest name as input and goes to that folder, removes previous files, creates new files using predefined template.
+        ### Usage
+        copy file udit to folder "/usr/local/bin/" and file1.cpp, file2.cpp to "~/Documents/Format/". Run command udit <Contest_Name>. Add these lines to .bashrc
+
+        alias udit='. udit'
+        words='Codeforces Lunchtime Long' #list for autocomplete. Modify acc to requirements
+        complete -W "${words}" 'udit'
+
+        To specify the number of files to be created, use command udit <Contest_Name> <Num>. <Num> can have values from 1 to 10.

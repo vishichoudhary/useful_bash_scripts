@@ -1,0 +1,83 @@
+#!/bin/bash
+
+num=5
+if [ $1 == 'Lunchtime' ]
+ then
+	num=4
+fi
+if [ $# == 2 ]
+ then
+	num=$2
+fi
+var='file2.cpp'
+if [ $1 == 'Codeforces' ]
+ then
+	var='file1.cpp'
+fi
+
+if [ ! -d ~/Documents/$1 ]
+ then
+	echo Folder does not exist
+	num=0
+fi
+
+
+if [ $num -gt 0 ]
+ then
+ 	cd ~/Documents/$1
+	rm *
+	cp ~/Documents/Format/$var ~/Documents/$1/one.cpp
+	subl one.cpp
+fi
+if [ $num -gt 1 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/two.cpp
+	subl two.cpp
+fi
+if [ $num -gt 2 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/three.cpp
+	subl three.cpp
+fi
+if [ $num -gt 3 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/four.cpp
+	subl four.cpp
+fi
+
+if [ $num -gt 4 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/five.cpp
+	subl five.cpp
+fi
+if [ $num -gt 5 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/six.cpp
+	subl six.cpp
+fi
+if [ $num -gt 6 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/seven.cpp
+	subl seven.cpp
+fi
+if [ $num -gt 7 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/eight.cpp
+	subl eight.cpp
+fi
+if [ $num -gt 8 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/nine.cpp
+	subl nine.cpp
+fi
+if [ $num -gt 9 ]
+ then
+	cp ~/Documents/Format/$var ~/Documents/$1/ten.cpp
+	subl ten.cpp
+fi
+
+
+if [ $num -gt 0 ]
+ then
+	echo Done
+fi
