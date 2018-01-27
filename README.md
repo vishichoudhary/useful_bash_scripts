@@ -32,7 +32,9 @@ This repo contains some useful bash scripts which are making my day-to-day life 
 
 ## 6.udit
         A simple script that takes contest name as input and goes to that folder, removes previous files, creates new files using predefined template.
-        ### Usage
+        
+	Usage
+	
         copy file udit to folder "/usr/local/bin/" and file1.cpp, file2.cpp to "~/Documents/Format/". Run command udit <Contest_Name>. Add these lines to .bashrc
 
         alias udit='. udit'
