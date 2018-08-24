@@ -30,7 +30,6 @@ if [ ! -f "$path" ]; then
         echo  -e "#define loopf(X,Y) for(int i=X;i<Y;i++)" >>$path
         echo  -e "#define loopb(X,Y) for(int i=X;i>Y;i--)" >>$path
         echo  -e  "#define dout(X) if(X)" >>$path
-        echo -e "#define matrix(rowsize,colsize,type,name) vector<vector<(type)>> name((rowsize),vector<(type)>(colsize));" >> $path
         echo  -e "int main(){">>$path
         echo -e "\t\treturn 0;">>$path
         echo "}">>$path
