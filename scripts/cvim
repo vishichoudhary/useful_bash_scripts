@@ -27,6 +27,7 @@ if [ ! -f "$path" ]; then
         echo   '#define pf(n)  printf("%lf",n)' >> $path
         echo   '#define ps(n)  printf("%s",n)' >> $path
         echo   '#define pn printf("\n")' >> $path
+        echo   '#define space printf(" ")' >> $path
         echo  -e "#define loopf(X,Y) for(int i=X;i<Y;i++)" >>$path
         echo  -e "#define loopb(X,Y) for(int i=X;i>Y;i--)" >>$path
         echo  -e  "#define dout(X) if(X)" >>$path
