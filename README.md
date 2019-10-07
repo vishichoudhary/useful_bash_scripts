@@ -29,7 +29,7 @@ This repo contains some useful bash scripts which are making my day-to-day life 
 		usage example: bash ping_network.sh
 		after execute the script pass you network
 		eg: 192.168.0.1
-## 6.ping_network
+## 6. remove_ctrl-M
                 This script removes ^M characters from files recursively.
                 Pre-requisites: dos2unix utility (see below to install)
                    apt-get install dos2unix
